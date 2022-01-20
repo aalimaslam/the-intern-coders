@@ -1,7 +1,5 @@
 from email.message import Message
 from django.shortcuts import render
-
-
 from .settings import BASE_DIR
 
 db_file = str(BASE_DIR) + "/dbfile.csv"
