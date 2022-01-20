@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Admission</title>
+    <link rel="stylesheet" href="{% static 'css/admission.css' %}">
+</head>
+<body>
+    <div class="container place-center">
+        <h1>Student Admission Portal</h1>
+        <form id='form' class="place-center" method="post">
+            {% csrf_token %}
+            <div class='input-container'>
+                <label for='name'>Enter Your Name*</label>
+                <input type='text' placeholder="Aaron Smith" id='name' name="name" required />
+            </div>
+
+            <div class='input-container'>
+                <label for='name'>Enter Your Phone*</label>
+                <input type='tel' placeholder="+91 8888 888 888" id='phone' name="phone" required />
+            </div>
+            <div class='input-container'>
+                <label for='course'>Enter Your Course Name*</label>
+                <input type='text' placeholder="Basics" list="courses" id='course' name="course" required/>
+            </div>
+            <div class='input-container'>
+                <label for='secondCourse'>Enter Your Second Course Name<br><small>Leave Blank if You Don't Have second course</small></label>
+                
+                <input type='text' list="courses" placeholder="Web Development" id='secondCourse' name="course2" />
+            </div>
+            <div class="submit-container">
+                <input type="submit" value="SUBMIT">
+            </div>
+        </form>
+    </div>
+
+    
+<datalist id="courses">
+    <option value="Web Design">
+    <option value="Computer Basics">
+    <option value="Basic C">
+</datalist>
+
+    <!-- <a href='#' id='link' >Download </a> -->
+
+    <!-- <script src="{% static 'script/script.js' %}"></script> -->
+</body>
+</html>

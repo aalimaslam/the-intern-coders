@@ -1,0 +1,24 @@
+#navbar{
+    width:100%;
+    padding:15px;
+}
+.nav{
+    width:30vw;
+}
+.cta a{
+    background:transparent;
+    padding:10px 30px;
+    transition:all .2s;
+    font-weight: bold;
+}
+.nav-item a:hover{
+    text-decoration: underline;
+}
+.cta a:hover{
+    background:white;
+    color:var(--primary-color);
+    text-decoration: none;
+}
+li{
+    list-style:none ;
+}

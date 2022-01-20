@@ -1,0 +1,130 @@
+.illustration-container{
+    width:50vw;
+}
+.illustration-container img{
+    width: 100%;
+}
+
+main{
+    padding:50px;
+}
+h1.heading{
+    font-size:3rem;
+}
+.description{
+    color:#888;
+    width:70%;
+    padding:20px 0px;
+    margin-bottom:20px;
+}
+.cta{
+    padding:10px 30px;
+    background:transparent;
+    color:var(--primary-color);
+}
+.cta:hover{
+    background:var(--primary-color);
+    color:var(--secondary-color);
+}
+.services-heading{
+    padding:20px;
+}
+.card{
+    background:var(--secondary-color);
+    padding:30px 40px;   
+}
+.card li{
+    padding:10px;
+}
+.cards-container{
+    padding:20px;
+    flex-wrap: wrap;
+}
+.basic-info{
+    padding:20px;
+}
+.active .card-heading{
+    color:var(--primary-color);
+    
+}
+.active{
+    transform: scale(1.1);
+    background: white;
+}
+
+ul {
+    list-style: none;
+  }
+  
+ul li::before {
+    content: "\2022";
+    color: var(--primary-color);
+    font-weight: bolder;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+#cta{
+    position:fixed;
+    right:20px;
+    bottom:40px;
+}
+#cta a::before{
+    content:'GET A CALL FROM US ';
+    position: absolute;
+    opacity: 0;
+}
+#cta a:hover::before{
+    opacity: 1;
+    transition: all .3s;
+
+    position:relative;
+    
+}
+
+@media only screen and (max-width:820px ){
+    .card{
+        width: 390px;
+        margin-top:5px;
+    }
+    main{
+        padding:10px;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+    .cards-container{
+        padding:0px;
+    }
+    section#landing-page {
+        flex-wrap: wrap-reverse;
+    }
+    .illustration-container{
+        width:70vw;
+    }
+    .text-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .heading{
+        text-align: center;
+    }
+    .description{
+        width:80%;
+    }
+    .active{
+        transform: scale(1);
+    }
+
+}
+@media only screen and (max-width:500px) {
+    .card{
+        width: 90%;
+    }
+   
+    .card{
+        padding:10px 30px;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {%extends 'base.html'%}
+    {%load static%}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Intern Coders | Winter Camp</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <!-- Put Header here  -->
+{% block body %}
+    <main>
+        <section id="landing-page" class=" flex j-around a-center">
+            <article class="text-container">
+                <h1 class="heading">We Will Teach You <br>
+                With The Best Practices.</h1>
+                <p class='description'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto tenetur iste, culpa ullam earum, quia dicta corporis blanditiis alias praesentium optio delectus? Cumque laborum atque exercitationem consequuntur veritatis cum error quam nulla, sequi odio. Explicabo at cupiditate numquam soluta incidunt?</p>
+                <a href="/getadmission" class="cta border">TALK TO US</a>
+            </article>
+            <article class='illustration-container'>
+                <img src="{% static 'imgs/teacher.svg' %}"" alt='Illustration of a teacher'>
+            </article>
+        </section>
+        <section id="services">
+            <h1 class="heading text-center services-heading">What We Provide</h1>
+
+            <article class="cards-container flex j-around">
+
+                <article class="card border box-shadow">
+                    <article class="basic-info text-center">
+                        <h2 class="card-heading">Basics</h2>
+                        <small class="price">₹1500</small>
+                    </article>
+                    <article class='information'>
+                        <ul>
+                            <li>Counselling</li>
+                            <li>All The Basics Covered</li>
+                            <li>Working Of Computer</li>
+                            <li>Installing and Uninstalling Softwares</li>
+                            <li>Advance Tips and Tricks</li>
+                            <li>Programming Overview</li>
+                        </ul>
+                    </article>
+                </article>
+
+                <article class="card border box-shadow active">
+                    <article class="basic-info text-center">
+                        <h2 class="card-heading">Web Design</h2>
+                        <small class="price">₹3500</small>
+                    </article>
+                    <article class='information'>
+                        <ul>
+                            <li>Counselling</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Vanilla JavaScript</li>
+                            <li>Working With Interpreters, IDE's <br>and Compilers</li>
+                            <li>Bootstrap Overview</li>
+                            <li>Web Development Overview</li>
+                        </ul>
+                    </article>
+                </article>
+
+                <article class="card border box-shadow">
+                    <article class="basic-info text-center">
+                        <h2 class="card-heading">Basic C Programming</h2>
+                        <small class="price">₹2000</small>
+                    </article>
+                    <article class='information'>
+                        <ul>
+                            <li>Counselling</li>
+                            <li>All The C Basics Covered</li>
+                            <li>Working With Compilers and Code<br> Editors</li>
+                            <li>Logic Builing</li>
+                            <li>Programming Overview</li>
+                            <li>Basic Algorithms</li>
+                            <li>Building Algorithms</li>
+                        </ul>
+                    </article>
+                </article>
+
+            </article>
+        </section>
+
+        <section id="cta">
+            <a href="getadmission" class="cta border">📞 </a>
+        </section>
+    </main>
+ {% endblock %}
+    <!-- Put Footer Here -->
+
+</body>
+</html>
