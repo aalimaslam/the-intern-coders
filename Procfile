@@ -1,1 +1,1 @@
-web: gunicorn TheInterCoders.wsgi
+web: gunicorn TheInternCoders.wsgi
